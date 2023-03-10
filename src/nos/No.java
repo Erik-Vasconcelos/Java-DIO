@@ -2,23 +2,23 @@ package nos;
 
 import java.util.StringJoiner;
 
-public class No {
+public class No<T> {
 
     //Um nó guarda um espaço para o seu valor e a referencia para um próximo
 
-    private String conteudo;
-    private No proximoNo;
+    private T conteudo;
+    private No<T> proximoNo;
 
-    public No(String conteudo) {
+    public No(T conteudo) {
         this.proximoNo = null;
         this.conteudo = conteudo;
     }
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
